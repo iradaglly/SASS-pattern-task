@@ -1,0 +1,61 @@
+@import"../../abstracts/variables";
+@import"../../abstracts/mixins";
+@import"../../layout/grid";
+
+#content-section {
+    width: 100%;
+    height: 70vh;
+    background-color: $primary-color;
+
+    .content-container {
+        width: 80%;
+        margin: 0 auto;
+
+        .heading {
+            text-align: center;
+            padding-top: 7%;
+            font-family: $main-font;
+            padding-bottom: 3%;
+
+            h2 {
+                color: $warning-color;
+                font-size: 1.1em;
+            }
+
+            h1 {
+                font-size: 3em;
+                color: $secondary-color;
+            }
+        }
+
+        .row {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .col-3 {
+                font-family: $main-font;
+                padding: 0 15px;
+
+                .card {
+                    color: white;
+
+                    p {
+                        padding-top: 2%;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+
+                    i {
+                        font-size: 50px;
+                        margin-bottom: 5%;
+                        border-radius: 50%;
+                        padding: 30px;
+                        color: $primary-color;
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+
+    }
+}

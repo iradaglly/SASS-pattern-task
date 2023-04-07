@@ -1,0 +1,34 @@
+@import"../../abstracts/variables";
+@import"../../abstracts/mixins";
+
+#buttons-section{
+width: 100%;
+height: 50vh;
+background-color: $primary-color;
+font-family: $main-font;
+h1{
+    color: $secondary-color;
+    padding-top: 9%;
+}
+.buttons{
+      
+   #click{
+    @include button(white, black);
+    width: 170px;
+    height: 65px;
+    margin-top: 7%;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 15%;
+   }
+   #look{
+    @include button(black,white);
+    width: 170px;
+    height: 65px;
+    margin-top: 7%;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 15%;
+   }
+}
+}

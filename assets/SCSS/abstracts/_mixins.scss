@@ -1,0 +1,14 @@
+@mixin for-tablet-landscape-up {
+    @media (max-width: 1180px) {
+      @content;
+    }
+  }
+
+  @mixin button($primary-color,$secondary-color){
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: $primary-color;
+    color: $secondary-color;
+    margin-bottom: 40px;
+    border: none;
+  }

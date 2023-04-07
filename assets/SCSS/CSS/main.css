@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+body {
+  height: 200vh;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #212529;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+header .nav-container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  header .nav-container {
+    width: 80%;
+  }
+}
+header .nav-container nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header .nav-container nav .nav_left .nav_logo {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+header .nav-container nav .nav_left .nav_logo img {
+  margin: 0;
+  height: 2rem;
+  transition: height 0.3s ease-in-out;
+}
+header .nav-container nav .nav_right {
+  display: flex;
+  align-items: center;
+}
+header .nav-container nav .nav_right ul {
+  display: flex;
+}
+@media (max-width: 1180px) {
+  header .nav-container nav .nav_right ul {
+    display: none;
+  }
+}
+header .nav-container nav .nav_right ul li {
+  margin-right: 30px;
+}
+header .nav-container nav .nav_right ul li a {
+  font-size: 0.95em;
+  font-family: "Montserrat";
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+  color: white;
+}
+header .nav-container nav .nav_right ul li a:hover {
+  color: rgb(236, 184, 7);
+}
+header .nav-container nav .nav_right .fa-bars {
+  padding: 15px 15px;
+  color: white;
+  background-color: rgba(52, 58, 64, 0.5);
+  border-radius: 5px;
+  display: none;
+}
+@media (max-width: 1180px) {
+  header .nav-container nav .nav_right .fa-bars {
+    display: flex;
+  }
+  header .nav-container nav .nav_right .fa-bars:hover {
+    background-color: rgb(26, 24, 24);
+  }
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer ul {
+  display: flex;
+}
+footer .footer ul li {
+  padding: 30px;
+}
+footer .footer ul li i {
+  font-size: 30px;
+  color: white;
+  background-color: rgb(29, 128, 159);
+  padding: 20px;
+  border-radius: 50%;
+}
+footer .footer span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  color: grey;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .content-hero {
+  position: absolute;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #212529;
+}
+#hero .content-hero h1 {
+  font-size: 5.5em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media (max-width: 1180px) {
+  #hero .content-hero h1 {
+    font-size: 4em;
+  }
+}
+#hero .content-hero p {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+@media (max-width: 1180px) {
+  #hero .content-hero p {
+    font-size: 1.3em;
+  }
+}
+#hero .content-hero #find-out {
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: rgb(29, 128, 159);
+  color: white;
+  margin-bottom: 40px;
+  border: none;
+  width: 170px;
+  height: 65px;
+  margin-top: 7%;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 15%;
+}
+
+#about {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-container {
+  width: 80%;
+  margin: 0 auto;
+}
+#about .about-container .content-about {
+  margin-top: 5%;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 2.5em;
+  text-align: center;
+}
+#about .about-container .content-about h1 {
+  font-size: 2em;
+}
+#about .about-container .content-about p {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+#about .about-container .content-about #what-offer {
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: rgb(29, 128, 159);
+  color: white;
+  margin-bottom: 40px;
+  border: none;
+  width: 170px;
+  height: 65px;
+  margin-top: 5%;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* phone */
+@media only screen and (max-width: 576px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+/* tablet */
+@media only screen and (max-width: 992px) and (min-width: 577px) {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+#content-section {
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(29, 128, 159);
+}
+#content-section .content-container {
+  width: 80%;
+  margin: 0 auto;
+}
+#content-section .content-container .heading {
+  text-align: center;
+  padding-top: 7%;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 3%;
+}
+#content-section .content-container .heading h2 {
+  color: rgb(236, 184, 7);
+  font-size: 1.1em;
+}
+#content-section .content-container .heading h1 {
+  font-size: 3em;
+  color: white;
+}
+#content-section .content-container .row {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#content-section .content-container .row .col-3 {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0 15px;
+}
+#content-section .content-container .row .col-3 .card {
+  color: white;
+}
+#content-section .content-container .row .col-3 .card p {
+  padding-top: 2%;
+  color: rgba(255, 255, 255, 0.7);
+}
+#content-section .content-container .row .col-3 .card i {
+  font-size: 50px;
+  margin-bottom: 5%;
+  border-radius: 50%;
+  padding: 30px;
+  color: rgb(29, 128, 159);
+  background-color: white;
+}
+
+#callout-section {
+  width: 100%;
+  height: 85vh;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+#callout-section .content-callout {
+  position: absolute;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.3em;
+  color: #212529;
+}
+#callout-section .content-callout #download {
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: rgb(29, 128, 159);
+  color: white;
+  margin-bottom: 40px;
+  border: none;
+  width: 170px;
+  height: 65px;
+  margin-top: 7%;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 15%;
+}
+
+#buttons-section {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(29, 128, 159);
+  font-family: "Source Sans Pro", sans-serif;
+}
+#buttons-section h1 {
+  color: white;
+  padding-top: 9%;
+}
+#buttons-section .buttons #click {
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: white;
+  color: black;
+  margin-bottom: 40px;
+  border: none;
+  width: 170px;
+  height: 65px;
+  margin-top: 7%;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 15%;
+}
+#buttons-section .buttons #look {
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  margin-bottom: 40px;
+  border: none;
+  width: 170px;
+  height: 65px;
+  margin-top: 7%;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 15%;
+}
+
+#map-section {
+  width: 100%;
+  height: 60vh;
+}
+#map-section iframe {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+@import"../../abstracts/variables";
+@import"../../abstracts/mixins";
+
+#about {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-container {
+        width: 80%;
+        margin: 0 auto;
+
+        .content-about {
+            margin-top: 5%;
+            font-family: $main-font;
+            line-height: 2.5em;
+            text-align: center;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 1.2em;
+            }
+
+            #what-offer {
+                @include button($primary-color, $secondary-color);
+                width: 170px;
+                height: 65px;
+                margin-top: 5%;
+                cursor: pointer;
+                font-size: 15px;
+            }
+        }
+    }
+
+}
